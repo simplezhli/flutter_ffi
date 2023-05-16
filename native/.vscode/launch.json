@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "attach",
+            "name": "Attach",
+            "pid": "${input:pid}",
+            "preLaunchTask": "get pid",
+            "initCommands": [
+                "platform select remote-android",
+                "platform connect connect://localhost:9876",
+                "file target/aarch64-linux-android/debug/libevent_log_kit.so",
+            ],
+        }
+    ],
+    "inputs": [
+        {
+            "id": "pid",
+            "type": "command",
+            "command": "extension.commandvariable.file.content",
+            "args": {
+                "fileName": "${workspaceRoot}/pid.txt",
+            }
+        }
+    ]
+}
