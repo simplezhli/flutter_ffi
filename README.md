@@ -23,4 +23,7 @@ samples, guidance on mobile development, and a full API reference.
 winget install -e --id LLVM.LLVM
 cargo install cargo-ndk --version 2.6.0
 flutter_rust_bridge_codegen -r native/src/api.rs -d lib/ffi/rust_ffi.dart -c ios/Runner/bridge_generated.h
+
+
+cargo xcode
 ```

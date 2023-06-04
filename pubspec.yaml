@@ -19,7 +19,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.19.0 <3.0.0'
+  sdk: ">=3.0.0-0 <4.0.0"
+  flutter: ">=3.7.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -36,7 +37,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   # https://pub.dev/packages/flutter_rust_bridge
-  flutter_rust_bridge: 1.75.3
+  flutter_rust_bridge: 1.77.1
   ffi: ^2.0.1
 
 dev_dependencies:
@@ -49,7 +50,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
-  ffigen: ^7.2.11
+  ffigen: ^8.0.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
