@@ -6,7 +6,7 @@
         {
             "label": "get pid",
             "type": "shell",
-            "command": "adb shell pidof dance.fit.zumba.weightloss.danceburn  | tr -d '\n' > ${workspaceRoot}/pid.txt"
+            "command": "adb shell pidof com.weilu.flutter_ffi  | tr -d '\n' > ${workspaceRoot}/pid.txt"
         }
     ]
 }

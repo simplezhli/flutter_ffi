@@ -10,8 +10,8 @@
             "initCommands": [
                 "platform select remote-android",
                 "platform connect connect://localhost:9876",
-                "file target/aarch64-linux-android/debug/libevent_log_kit.so",
-            ],
+                "file target/aarch64-linux-android/debug/libevent_log_kit.so"
+            ]
         }
     ],
     "inputs": [
@@ -20,7 +20,7 @@
             "type": "command",
             "command": "extension.commandvariable.file.content",
             "args": {
-                "fileName": "${workspaceRoot}/pid.txt",
+                "fileName": "${workspaceRoot}/pid.txt"
             }
         }
     ]
